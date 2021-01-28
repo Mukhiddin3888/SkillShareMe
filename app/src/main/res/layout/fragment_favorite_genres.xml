@@ -5,18 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/splash_back2"
-    tools:context=".FavoriteGenresFragment">
+    tools:context=".splash.FavoriteGenresFragment">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/txv_tell_fg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="32dp"
             android:text="@string/fav_genres_txt"
             android:textColor="@color/white"
@@ -45,9 +49,11 @@
             android:layout_width="174dp"
             android:layout_height="94dp"
             android:layout_marginStart="26dp"
+            android:textSize="22sp"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:text="@string/fantasy"
+            android:background="@drawable/rectangle_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txv_atleast"
             android:layout_marginTop="40dp"/>
@@ -58,7 +64,9 @@
             android:layout_height="94dp"
             android:textColor="@color/white"
             android:textAllCaps="false"
+            android:textSize="22sp"
             android:text="@string/thriller"
+            android:background="@drawable/rectangle_2"
             app:layout_constraintBaseline_toBaselineOf="@id/btn_fantasy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btn_fantasy" />
@@ -69,8 +77,11 @@
             android:layout_height="94dp"
             android:textColor="@color/white"
             android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
             android:text="@string/romans"
             android:layout_marginStart="26dp"
+            android:background="@drawable/rectangle_3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_fantasy" />
 
@@ -79,7 +90,9 @@
             android:layout_width="174dp"
             android:layout_height="94dp"
             android:text="@string/science_fiction"
+            android:background="@drawable/rectangle_4"
             android:textColor="@color/white"
+            android:textSize="22sp"
             android:textAllCaps="false"
             app:layout_constraintBaseline_toBaselineOf="@id/btn_romans"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,6 +102,9 @@
             android:layout_width="174dp"
             android:layout_height="94dp"
             android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="22sp"
+            android:background="@drawable/rectangle_5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_romans"
             android:text="@string/literature"
@@ -103,6 +119,8 @@
             android:text="@string/Action"
             android:textColor="@color/white"
             android:textAllCaps="false"
+            android:textSize="22sp"
+            android:background="@drawable/rectangle_6"
             app:layout_constraintBaseline_toBaselineOf="@id/btn_literature"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btn_literature" />
@@ -114,7 +132,10 @@
             android:layout_marginStart="26dp"
             android:text="@string/biography"
             android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:textSize="22sp"
             android:textAllCaps="false"
+            android:background="@drawable/rectangle_7"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_literature" />
 
@@ -123,12 +144,35 @@
             android:layout_width="174dp"
             android:layout_height="94dp"
             android:text="@string/others"
-            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
             android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:background="@drawable/rectangle_8"
             app:layout_constraintBaseline_toBaselineOf="@id/btn_biography"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btn_biography" />
 
+        <Button
+            android:id="@+id/btn_letsStart"
+            android:layout_height="58dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/let_s_start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:background="@drawable/category_back"
+            app:layout_constraintTop_toBottomOf="@id/btn_biography"
+            android:layout_marginStart="26dp"
+            android:layout_width="360dp"
+            android:layout_marginBottom="24dp"
+            />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
 </FrameLayout>

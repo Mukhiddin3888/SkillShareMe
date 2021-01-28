@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteGenresFragment"
-        android:name="com.example.skillshare.FavoriteGenresFragment"
+        android:name="com.example.skillshare.splash.FavoriteGenresFragment"
         android:label="fragment_favorite_genres"
         tools:layout="@layout/fragment_favorite_genres" />
 </navigation>

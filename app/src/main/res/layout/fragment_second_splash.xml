@@ -45,7 +45,7 @@
            android:orientation="horizontal"
            app:layout_constraintEnd_toEndOf="parent"
            app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toBottomOf="@id/txv_spl1"
+           android:layout_marginBottom="36dp"
            app:layout_constraintBottom_toTopOf="@id/txv_skip_2"
 
            android:padding="8dp">
@@ -54,15 +54,14 @@
                android:id="@+id/sp2_btn_next1"
                android:layout_width="8dp"
                android:layout_height="8dp"
-               android:background="@drawable/ic_choosen"
-               android:backgroundTint="@color/secondary"
+               android:background="@drawable/ic_not_choosen"
                android:layout_marginEnd="5dp"/>
 
            <Button
                android:id="@+id/sp2_btn_next2"
                android:layout_width="8dp"
                android:layout_height="8dp"
-               android:background="@drawable/ic_not_choosen"
+               android:background="@drawable/ic_choosen"
                android:layout_marginEnd="5dp"
                />
 
