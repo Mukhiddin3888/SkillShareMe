@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_back2"
+    tools:context=".FavoriteGenresFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txv_tell_fg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/fav_genres_txt"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txv_atleast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="At least 3 genres required*"
+            android:textColor="@color/white70"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txv_tell_fg"
+
+            />
+
+        <Button
+            android:id="@+id/btn_fantasy"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="26dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/fantasy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txv_atleast"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:id="@+id/btn_thriller"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/thriller"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_fantasy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_fantasy" />
+
+        <Button
+            android:id="@+id/btn_romans"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/romans"
+            android:layout_marginStart="26dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_fantasy" />
+
+        <Button
+            android:id="@+id/btn_science"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:text="@string/science_fiction"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_romans"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_romans" />
+        <Button
+            android:id="@+id/btn_literature"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="26dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_romans"
+            android:text="@string/literature"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+           />
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:text="@string/Action"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_literature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_literature" />
+
+        <Button
+            android:id="@+id/btn_biography"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="26dp"
+            android:text="@string/biography"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_literature" />
+
+        <Button
+            android:id="@+id/btn_others"
+            android:layout_width="174dp"
+            android:layout_height="94dp"
+            android:text="@string/others"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_biography"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_biography" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

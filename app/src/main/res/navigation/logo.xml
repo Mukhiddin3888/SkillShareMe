@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logo"
+    app:startDestination="@id/logo2">
+
+    <fragment
+        android:id="@+id/logo2"
+        android:name="com.example.skillshare.splash.Logo"
+        android:label="fragment_logo"
+        tools:layout="@layout/fragment_logo" >
+        <action
+            android:id="@+id/action_logo2_to_splash2"
+            app:destination="@id/splash2" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash2"
+        android:name="com.example.skillshare.splash.firstSplash"
+        android:label="fragment_splash2"
+        tools:layout="@layout/fragment_first_splash" >
+        <action
+            android:id="@+id/action_splash2_to_secondSplashFragment"
+            app:destination="@id/secondSplashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondSplashFragment"
+        android:name="com.example.skillshare.splash.secondSplashFragment"
+        android:label="fragment_second_splash"
+        tools:layout="@layout/fragment_second_splash" >
+        <action
+            android:id="@+id/action_secondSplashFragment_to_thirdSplashFragment"
+            app:destination="@id/thirdSplashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdSplashFragment"
+        android:name="com.example.skillshare.splash.ThirdSplashFragment"
+        android:label="fragment_third_splash"
+        tools:layout="@layout/fragment_third_splash" >
+        <action
+            android:id="@+id/action_thirdSplashFragment_to_favoriteGenresFragment"
+            app:destination="@id/favoriteGenresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteGenresFragment"
+        android:name="com.example.skillshare.FavoriteGenresFragment"
+        android:label="fragment_favorite_genres"
+        tools:layout="@layout/fragment_favorite_genres" />
+</navigation>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Skillshare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_txv1">We offer a wide range of books in various categories, sure you will find yours</string>
+    <string name="txt_splash2">Follow your favourite authors, learn more about their life story, and be notified from new realeses</string>
+    <string name="txt_splash_3">Buy and read books in different formats: paper book, ebook and audiobook</string>
+    <string name="fav_genres_txt">Tell us your favourite genres</string>
+    <string name="others">Others</string>
+    <string name="biography">Biography</string>
+    <string name="Action" >Action</string>
+    <string name="literature">Literature</string>
+    <string name="science_fiction">Science Fiction</string>
+    <string name="romans">Romans</string>
+    <string name="thriller">Thriller</string>
+    <string name="fantasy">Fantasy</string>
+</resources>
