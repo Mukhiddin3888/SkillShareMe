@@ -1,11 +1,15 @@
 package com.example.skillshare.splash
 
+import android.content.Intent
 import android.graphics.Color.parseColor
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import com.example.skillshare.MainActivity2
 import com.example.skillshare.R
 import kotlinx.android.synthetic.main.fragment_favorite_genres.*
 import kotlinx.android.synthetic.main.fragment_favorite_genres.view.*
@@ -104,6 +108,13 @@ class FavoriteGenresFragment : Fragment() {
                 btn_literature.setTextColor(parseColor("#FFFFFF"))
             choosen = false
         }
+        }
+
+        view.btn_letsStart.setOnClickListener{
+            val intent = Intent (getActivity(), MainActivity2::class.java)
+            getActivity()?.startActivity(intent)
+            activity?.finish()
+
         }
 
         return view
