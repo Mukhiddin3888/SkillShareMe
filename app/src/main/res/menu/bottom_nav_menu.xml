@@ -3,25 +3,25 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:title="Home"
+        android:title="@string/home"
         android:icon="@drawable/home"
         />
     <item
         android:id="@+id/searchFragment"
-        android:title="Search"
+        android:title="@string/search"
         android:icon="@drawable/search"/>
     <item
         android:id="@+id/readerFragment"
-        android:title="Reader"
+        android:title="@string/reader"
         android:icon="@drawable/play"
         />
     <item
         android:id="@+id/myBooksFragment"
-        android:title="My Books"
+        android:title="@string/my_books"
         android:icon="@drawable/group"
         />
     <item
         android:id="@+id/settingsFragment"
         android:icon="@drawable/setting"
-        android:title="Settings" />
+        android:title="@string/settings" />
 </menu>

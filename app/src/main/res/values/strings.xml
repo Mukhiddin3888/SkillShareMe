@@ -16,4 +16,9 @@
     <string name="fantasy">Fantasy</string>
     <string name="let_s_start">Let\'s Start</string>
     <string name="titile_home">Enrich your life with books</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="reader">Reader</string>
+    <string name="my_books">My Books</string>
+    <string name="settings">Settings</string>
 </resources>
