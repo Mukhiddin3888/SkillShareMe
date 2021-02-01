@@ -10,7 +10,7 @@
         android:layout_width="174dp"
         android:layout_height="94dp"
         android:textSize="22sp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:text="@string/fantasy"

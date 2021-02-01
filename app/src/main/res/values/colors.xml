@@ -15,4 +15,7 @@
     <color name="secondary">#F16F54</color>
     <color name="white70">#B3FFFFFF</color>
     <color name="lite_sec">#F4B45D</color>
+    <color name="fiolet">#4F3C75</color>
+    <color name="gray">#8B8483</color>
+
 </resources>
