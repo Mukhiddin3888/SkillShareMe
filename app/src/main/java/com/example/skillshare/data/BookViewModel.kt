@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class BookViewModel(application: Application):AndroidViewModel(application) {
 
-    private val readAllData: LiveData<List<Book>>
+     val readAllData: LiveData<List<Book>>
     private val repository:BookRepository
     init {
         val bookDAO =BookDataBase.getDatabase(application).bookDao()

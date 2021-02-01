@@ -55,6 +55,8 @@ class addBookFragment : Fragment() {
             Toast.makeText(requireContext(),"Succesfully added new book",Toast.LENGTH_LONG).show()
 
             findNavController().navigate(R.id.homeFragment)
+
+
         }else{
             Toast.makeText(requireContext(),"Please fill all sets",Toast.LENGTH_LONG).show()
 

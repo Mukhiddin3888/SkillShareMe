@@ -6,14 +6,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.skillshare.BookAdapter
 import com.example.skillshare.CategoriesModel
 import com.example.skillshare.CategoryAdapter
 import com.example.skillshare.R
+import com.example.skillshare.data.BookViewModel
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class HomeFragment : Fragment() {
+
+    private lateinit var mBooksViewModel: BookViewModel
 
     @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +41,26 @@ class HomeFragment : Fragment() {
 
         view.recyclerView.layoutManager = LinearLayoutManager(this.context,LinearLayoutManager.HORIZONTAL,false)
         view.recyclerView.adapter = CategoryAdapter(categories)
+
+
+
+        //recyclrView
+        val adapter = BookAdapter()
+        val recyclerView = view.recViewBooks
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+
+
+            // ViewModel
+        mBooksViewModel = ViewModelProvider(this).get(BookViewModel::class.java)
+        mBooksViewModel.readAllData.observe(viewLifecycleOwner, Observer {book->
+
+            adapter.setData(book)
+
+
+        })
+
+
 
         return view
     }
